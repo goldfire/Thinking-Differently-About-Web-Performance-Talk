@@ -1,0 +1,9 @@
+{
+  "name": "Thinking-Differently-About-Web-Performance-Talk",
+  "description": "Talk about using DevTools to improve web app performance given at Connect.Tech 2016.",
+  "author": "James Simpson <james@goldfirestudios.com> (http://goldfirestudios.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goldfire/Thinking-Differently-About-Web-Performance.git"
+  }
+}

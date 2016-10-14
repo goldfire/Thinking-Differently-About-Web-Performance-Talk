@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Thinking Differently About Web Performance</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+      .goldfire {
+        display: block;
+        margin-bottom: 13px;
+        background: url(images/goldfire.svg) no-repeat;
+        width: 7.813em;
+        height: 3.125em;
+        position: absolute;
+        bottom: 30%;
+        right: 70px;
+      }
+      .howler {
+        display: block;
+        margin-bottom: 13px;
+        background: url(images/howler.svg) no-repeat;
+        width: 7.813em;
+        height: 3.125em;
+        position: absolute;
+        bottom: 0%;
+        right: 70px;
+      }
+      .social-icon {
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+      }
+      .github {
+        background: url(images/github.svg) no-repeat;
+      }
+      .twitter {
+        background: url(images/twitter.svg) no-repeat;
+      }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2 style="margin: 0">Thinking Differently<br><div style="font-size: 60%; color: #a5a5a5; margin: 10px;">About</div>Web Performance</h2><br><br>
+          <!-- <span style="font-size: 130%; color: #a5a5a5;">Node.js and WebSockets</span><br><br><br> -->
+          <a href="http://goldfirestudios.com">James Simpson</a> / <a href="https://twitter.com/GoldFireStudios">@GoldFireStudios</a>
+        </section>
+        <section data-background-transition="convex" data-background-image="images/james.png" data-background-size="contain" data-background-position="32% 0">
+          <div style="psotion: absolute; right: 0; text-align: right; padding-bottom: 290px; padding-right: 70px;">
+            <h2 style="margin: 0">Hi, I'm James.</h2>
+            <span style="font-size: 90%; color: #a5a5a5;">Founder & open source author.</span>
+            <div class="goldfire"></div>
+            <div class="howler"></div>
+          </div>
+        </section>
+        <section>
+          <h2 style="margin: 0">Why should I care?</h2>
+          <span style="font-size: 150%; color: #a5a5a5;">Computers are powerful now.</span>
+        </section>
+        <section>
+          <h2 style="margin: 0">Latest Tech</h2>
+          <span style="font-size: 150%; color: #a5a5a5;">Not everyone has it.</span>
+        </section>
+        <section>
+          <h2 style="margin: 0">Mobile Devices</h2>
+          <span style="font-size: 150%; color: #a5a5a5;">Slower than your laptop.</span>
+        </section>
+        <section>
+          <h2 style="margin: 0">Always a Cost</h2>
+          <span style="font-size: 100%; color: #a5a5a5;">Just because it is there,<br>doesn't mean you have to use it.</span>
+        </section>
+        <section>
+          <h1>Demo Time!</h1>
+        </section>
+        <section>
+          <h1>THANK YOU!</h1><br>
+          <div style="display: inline-block; margin-right: 40px;">
+            <div class="social-icon twitter" style="vertical-align: middle; margin-right: 10px;"></div>
+            <a href="https://twitter.com/GoldFireStudios" style="display: inline-block;">@GoldFireStudios</a>
+          </div>
+          <div style="display: inline-block;">
+            <div class="social-icon github" style="vertical-align: middle; margin-right: 10px;"></div>
+            <a href="https://github.com/goldfire" style="display: inline-block;">@goldfire</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="demo1" class="live-demo">
+      <iframe src="../" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+    <div id="demo2" class="live-demo">
+      <iframe src="../" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+        controls: false,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {src: 'plugin/markdown/marked.js'},
+          {src: 'plugin/markdown/markdown.js'},
+          {src: 'plugin/notes/notes.js', async: true},
+          {src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }}
+        ]
+      });
+    </script>
+  </body>
+</html>
